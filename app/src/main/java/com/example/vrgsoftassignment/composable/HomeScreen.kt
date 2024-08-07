@@ -16,10 +16,7 @@ fun HomeScreen(
     Scaffold(
         topBar = { HomeAppBar(title = "Reddit Client") },
         content = { innerPadding ->
-            RedditPosts(
-                redditViewModel.getRedditTopPosts(),
-                Modifier.padding(innerPadding)
-            )
+            RedditPosts(modifier = Modifier.padding(innerPadding))
         }
     )
 }
